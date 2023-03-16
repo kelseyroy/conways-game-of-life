@@ -16,5 +16,5 @@ test("returns an updated grid or matrix", () => {
 let unsustainableCells = [[0,0], [3,3]];
 
 test("return an empty board if the cells have less than 2 live neighbors", () => {
-    expect(conwayGameOfLife(4, 4, cells)).toEqual(grid);
+    expect(conwayGameOfLife(4, 4, unsustainableCells)).toEqual(grid);
 })
